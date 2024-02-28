@@ -32,8 +32,6 @@ router.get("/event", (req, res) => {
 
 // listCompetitions
 router.get("/competition", (req, res) => {
-  // API
-  const url = `http://142.93.36.1/api/v1/fetch_data?Action=listCompetitions&EventTypeID=${req.params.id}`;
 
   //Get Events from database
   Events_Schema.find()
@@ -42,7 +40,7 @@ router.get("/competition", (req, res) => {
         //Make axios GET request
         axios
           .get(
-            `http://142.93.36.1/api/v1/fetch_data?Action=listCompetitions&EventTypeID=${event.id}`
+            `http://142.93.36.1/api/v1/fetch_data?Action=listCompetitions&EventTypeID=${event.event_type}`
           )
           .then((response) => {
             //Run API response in a loop
