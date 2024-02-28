@@ -11,6 +11,14 @@ router.get("/event", (req, res) => {
   axios
     .get(url)
     .then((response) => {
+
+      //Remove all old 
+      Events_Schema.deleteMany({}, (err) => {
+        if (err) {
+          res.status(500).json({ message: err.message });
+        }
+      });
+      
       //Run API response in a loop
       response.data.forEach((element) => {
         //Save to database
