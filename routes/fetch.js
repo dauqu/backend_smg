@@ -18,14 +18,14 @@ router.get("/event", (req, res) => {
           res.status(500).json({ message: err.message });
         }
       });
-      
+
       //Run API response in a loop
       response.data.forEach((element) => {
         //Save to database
         const save_event = new Events_Schema({
-          event_type: element.event_type,
-          event_name: element.event_name,
-          market_count: element.market_count,
+          event_type: element.eventType,
+          event_name: element.name,
+          market_count: element.marketCount,
         });
 
         save_event.save();
