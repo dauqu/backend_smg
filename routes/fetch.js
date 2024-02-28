@@ -13,7 +13,7 @@ router.get("/event", (req, res) => {
     .then((response) => {
 
       //Remove all old 
-      Events_Schema.deleteMany({}, (err) => {
+      Events_Schema.remove({}, function (err) {
         if (err) {
           console.log(err);
         }
