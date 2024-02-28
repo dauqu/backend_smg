@@ -15,7 +15,7 @@ router.get("/event", (req, res) => {
       //Remove all old 
       Events_Schema.deleteMany({}, (err) => {
         if (err) {
-          res.status(500).json({ message: err.message });
+          console.log(err);
         }
       });
 
