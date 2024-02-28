@@ -12,13 +12,6 @@ router.get("/event", (req, res) => {
     .get(url)
     .then((response) => {
 
-      //Remove all old 
-      Events_Schema.remove({}, function (err) {
-        if (err) {
-          console.log(err);
-        }
-      });
-
       //Run API response in a loop
       response.data.forEach((element) => {
         //Save to database
