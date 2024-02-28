@@ -32,7 +32,6 @@ router.get("/event", (req, res) => {
 
 // listCompetitions
 router.get("/competition", (req, res) => {
-
   //Get Events from database
   Events_Schema.find()
     .then((events) => {
@@ -45,16 +44,19 @@ router.get("/competition", (req, res) => {
           .then((response) => {
             //Run API response in a loop
             response.data.forEach((element) => {
-              //Save to database
-              const save_competition = new competition_schema({
-                id: element.competition.id,
-                event_id: event.id,
-                name: element.competition.name,
-                market_count: element.marketCount,
-                competition_region: element.competitionRegion,
-              });
+              //map element
+              element.forEach((competition) => {
+                //Save to database
+                const save_competition = new competition_schema({
+                  id: competition.competition.id,
+                  event_id: event.id,
+                  name: competition.competition.name,
+                  market_count: competition.marketCount,
+                  competition_region: competition.competitionRegion,
+                });
 
-              save_competition.save();
+                save_competition.save();
+              });
             });
             res.status(200).json({
               message: "Competitions fetched and saved to database",
