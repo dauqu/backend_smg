@@ -22,6 +22,7 @@
     "express-fileupload": "^1.4.3",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.1.3",
+    "mysql": "^2.18.1",
     "node-ccavenue": "^1.0.5",
     "nodemailer": "^6.9.9",
     "slugify": "^1.6.6",
