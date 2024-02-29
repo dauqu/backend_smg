@@ -1,21 +1,21 @@
 const mongoose = require("mongoose");
 
 //Schema
-const CompetitionSchema = new mongoose.Schema(
+const TeamSchema = new mongoose.Schema(
   {
-    id: {
+    category_id: {
+      type: String,
+    },
+    slug: {
       type: String,
     },
     name: {
       type: String,
     },
-    event_type: {
+    short_name: {
       type: String,
     },
-    market_count: {
-      type: String,
-    },
-    competition_region: {
+    image: {
       type: String,
     },
   },
@@ -24,4 +24,4 @@ const CompetitionSchema = new mongoose.Schema(
   }
 );
 
-module.exports = mongoose.model("competition", CompetitionSchema);
+module.exports = mongoose.model("team", TeamSchema);

@@ -1,12 +1,12 @@
 const mongoose = require("mongoose");
 
 //Schema
-const EventSchema = new mongoose.Schema(
+const TypeSchema = new mongoose.Schema(
   {
     event_type: {
       type: String,
     },
-    event_name: {
+    type_name: {
       type: String,
     },
     market_count: {
@@ -18,4 +18,4 @@ const EventSchema = new mongoose.Schema(
   }
 );
 
-module.exports = mongoose.model("events", EventSchema);
+module.exports = mongoose.model("type", TypeSchema);

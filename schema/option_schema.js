@@ -1,21 +1,27 @@
 const mongoose = require("mongoose");
 
 //Schema
-const CompetitionSchema = new mongoose.Schema(
+const OptionSchema = new mongoose.Schema(
   {
-    id: {
+    question_id: {
+      type: String,
+    },
+    type: {
       type: String,
     },
     name: {
       type: String,
     },
-    event_type: {
+    odds: {
       type: String,
     },
-    market_count: {
+    status: {
       type: String,
     },
-    competition_region: {
+    locked: {
+      type: String,
+    },
+    winner: {
       type: String,
     },
   },
@@ -24,4 +30,4 @@ const CompetitionSchema = new mongoose.Schema(
   }
 );
 
-module.exports = mongoose.model("competition", CompetitionSchema);
+module.exports = mongoose.model("option", OptionSchema);
