@@ -7,7 +7,7 @@ const competition_schema = require("../schema/competition_schema");
 //Get all competitions
 router.get("/all", (req, res) => {
   //Get only 10 competitions
-  const competitions = competition_schema.find({}).limit(10);
+  const competitions = competition_schema.find({}).limit(1000);
   //Count all competitions
   const count = competition_schema.countDocuments();
 
