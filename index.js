@@ -52,7 +52,7 @@ app.get("/", (req, res) => {
 });
 
 
-setInterval(refreshData, 5000);
+setInterval(refreshData, 10000);
 
 
 // WebSocket connection handler
