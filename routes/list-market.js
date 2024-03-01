@@ -14,7 +14,7 @@ router.get("/all", (req, res) => {
   //Return response
   Promise.all([competitions, count])
     .then((response) => {
-      res.status(200).json({ competitions: response[0], count: response[1] });
+      res.status(200).json({ market: response[0], count: response[1] });
     })
     .catch((error) => {
       res.status(500).json({ message: error.message });

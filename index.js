@@ -45,13 +45,13 @@ app.use("/type", require("./routes/type"));
 app.use("/competition", require("./routes/competition"));
 app.use("/event", require("./routes/event"));
 app.use("/market", require("./routes/list-market"));
-app.use("/market-odds", require("./routes/market-odds"));
+app.use("/market-odds", require("./routes/market-odds")); 
 // Database feacher from routes
-app.use("/questions", require("./routes/questions"));
-app.use("/options", require("./routes/option"));
-app.use("/team", require("./routes/team"));
-app.use("/game", require("./routes/game"));
-app.use("/league", require("./routes/leagues"));
+// app.use("/questions", require("./routes/questions"));
+// app.use("/options", require("./routes/option"));
+// app.use("/team", require("./routes/team"));
+// app.use("/game", require("./routes/game"));
+// app.use("/league", require("./routes/leagues"));
 
 app.use("/register", require("./routes/register"));
 app.use("/login", require("./routes/login"));

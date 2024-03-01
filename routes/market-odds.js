@@ -8,17 +8,27 @@ const market_odds = require("../schema/market_odds");
 router.get("/all", (req, res) => {
   //Get only 10 competitions
   const competitions = market_odds.find({}).limit(3);
-  //Count all competitions
+  //Count all competitions 
   const count = market_odds.countDocuments();
 
   //Return response
   Promise.all([competitions, count])
     .then((response) => {
-      res.status(200).json({ competitions: response[0], count: response[1] });
+      res.status(200).json({ market: response[0], count: response[1] });
     })
     .catch((error) => {
       res.status(500).json({ message: error.message });
     });
+});
+
+//Get by market id
+router.get("/id/:id", async (req, res) => {
+  try {
+    const market = await market_odds.find({ market_id: req.params.id }).lean().exec();
+    res.status(200).json({ market });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
 });
 
 router.get("/", async (req, res) => {

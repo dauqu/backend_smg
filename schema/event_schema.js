@@ -36,6 +36,14 @@ const EventSchema = new mongoose.Schema(
     undeclared_market: {
       type: String,
     },
+    market_type: {
+      type: Array,
+      default: [],
+    },
+    market_odds: {
+      type: Array,
+      default: [],
+    },
   },
   {
     timestamps: true,

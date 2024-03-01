@@ -21,6 +21,27 @@ router.get("/all", (req, res) => {
     });
 });
 
+//Get by event_type
+router.get("/id/:event_type", (req, res) => {
+  //Get only 10 competitions
+  const competitions = competition_schema
+    .find({ event_type: req.params.event_type })
+    .limit(10);
+  //Count all competitions
+  const count = competition_schema.countDocuments({
+    event_type: req.params.event_type,
+  });
+
+  //Return response
+  Promise.all([competitions, count])
+    .then((response) => {
+      res.status(200).json({ competitions: response[0], count: response[1] });
+    })
+    .catch((error) => {
+      res.status(500).json({ message: error.message });
+    });
+});
+
 router.get("/", async (req, res) => {
   try {
     // Delete all previous data

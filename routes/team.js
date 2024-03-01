@@ -4,6 +4,23 @@ const router = express.Router();
 const EventSchema = require("./../schema/event_schema");
 const team_schema = require("../schema/team_schema");
 const slugify = require("slugify");
+const mysql = require("mysql");
+
+// Mysql config
+const db = mysql.createConnection({
+  host: "localhost",
+  user: "bet",
+  password: "7388139606",
+  database: "bet",
+});
+
+//Connect to database
+db.connect((err) => {
+  if (err) {
+    throw err;
+  }
+  console.log("Mysql Connected...");
+});
 
 //Get all competitions
 router.get("/all", (req, res) => {
@@ -34,9 +51,35 @@ router.get("/id/:id", async (req, res) => {
 
 router.get("/", async (req, res) => {
   try {
+    let sql = `CREATE TABLE IF NOT EXISTS teams (
+        id INT PRIMARY KEY,
+        category_id INT,
+        slug VARCHAR(255),
+        name VARCHAR(255),
+        short_name VARCHAR(255),
+        image VARCHAR(255),
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+      )`;
+
+    db.query(sql, (err, result) => {
+      if (err) throw err;
+      console.log(result);
+      //   res.send("Leagues table created...");
+    });
     // Delete all previous data
     await team_schema.deleteMany({});
     console.log("Previous data deleted");
+
+    //Delete all previous data from mysql
+    let deleteQuery = `DELETE FROM teams`;
+    db.query(deleteQuery, (err, result) => {
+      if (err) {
+        console.error("Error deleting data:", err);
+      } else {
+        console.log("Data deleted successfully:", result);
+      }
+    });
 
     // Get Events from database
     const events = await EventSchema.find({}).lean();
@@ -46,10 +89,12 @@ router.get("/", async (req, res) => {
         `http://142.93.36.1/api/v1/fetch_data?Action=listMarketTypes&EventID=${event.event_id}`
       );
 
-      //   console.log(response.data);
+      // console.log(response.data.runners);
+      // console.log(response.data);
 
       // Save competitions to database
       for (const team of response.data) {
+        console.log(team);
         var slug = slugify(
           team.runners[0].runnerName + team.runners[1].runnerName,
           {
@@ -59,17 +104,33 @@ router.get("/", async (req, res) => {
           }
         );
 
-        //Generate Short Name 
-        var short_name = team.runners[0].runnerName.substring(0, 3) + "vs" + team.runners[1].runnerName.substring(0, 3);
+        // Generate Short Name
+        var short_name =
+          team.runners[0].runnerName.substring(0, 3) +
+          "vs" +
+          team.runners[1].runnerName.substring(0, 3);
+        for (const tea of team.runners) {
+          console.log(tea);
+          //   console.log(team);
 
-        const teams = new team_schema({
-          category_id: 1,
-          slug: slug,
-          name: team.marketName,
-          short_name: short_name,
-          image: "65d9aadb4a5d31708763867.jpg",
-        });
-        await teams.save();
+          const teams = new team_schema({
+            category_id: 1,
+            slug: slug,
+            name: tea.runnerName,
+            short_name: short_name,
+            image: "65d9aadb4a5d31708763867.jpg",
+          });
+          await teams.save();
+
+          let insertQuery = `INSERT INTO teams (id, category_id, slug, name, short_name, image, created_at, updated_at) VALUES ('${tea.selectionId}', '1', '${slug}', '${tea.runnerName}', '${short_name}', '65d9aadb4a5d31708763867.jpg', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)`;
+          db.query(insertQuery, (err, result) => {
+            if (err) {
+              console.error("Error inserting data:", err);
+            } else {
+              console.log("Data inserted successfully:", result);
+            }
+          });
+        }
       }
     }
 
