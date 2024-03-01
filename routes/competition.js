@@ -26,7 +26,7 @@ router.get("/id/:event_type", (req, res) => {
   //Get only 10 competitions
   const competitions = competition_schema
     .find({ event_type: req.params.event_type })
-    .limit(10);
+    .limit(1000);
   //Count all competitions
   const count = competition_schema.countDocuments({
     event_type: req.params.event_type,
