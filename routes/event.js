@@ -26,7 +26,7 @@ router.get("/id/:id", async (req, res) => {
   try {
     const event = await EventSchema.find({
       competition_id: req.params.id,
-    }).lean().limit(5);
+    }).lean().limit(50);
 
     res.status(200).json(event);
   } catch (error) {
@@ -47,14 +47,16 @@ router.get("/", async (req, res) => {
       const response = await axios.get(
         `http://142.93.36.1/api/v1/fetch_data?Action=listEvents&EventTypeID=${event.event_type}&CompetitionID=${event.id}`
       );
-
+        // console.log(response.data)
       //   console.log(response.data);
 
       // Save competitions to database
       for (const element of response.data) {
+        console.log(element)
 
+        //Skip if event is not available
         const market_type = await axios.get(
-          `http://142.93.36.1/api/v1/fetch_data?Action=listMarketTypes&EventID=28102621`
+          `http://142.93.36.1/api/v1/fetch_data?Action=listMarketTypes&EventID=${element.event.id}`
         );
 
         const market_odds = await axios.get(
