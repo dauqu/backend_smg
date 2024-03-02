@@ -13,11 +13,11 @@ const UsersSchema = new mongoose.Schema(
     },
     username: {
       type: String,
-      required: true,
+      required: null,
     },
     email: {
       type: String,
-      required: false,
+      required: true,
     },
     language: {
       type: String,
@@ -38,18 +38,6 @@ const UsersSchema = new mongoose.Schema(
     status: {
       type: String,
       default: "active",
-    },
-    gender: {
-      type: String,
-      default: "male",
-    },
-    age: {
-      type: String,
-      default: null,
-    },
-    city: {
-      type: String,
-      default: "delhi",
     },
   },
   {

@@ -12,7 +12,6 @@ router.get("/", (req, res) => {
 });
 
 router.post("/", validateRegister, async (req, res) => {
-    console.log(req.body)
   //Hash password
   const hashed_password = await bcrypt.hash(req.body.password, 10);
 
@@ -22,11 +21,8 @@ router.post("/", validateRegister, async (req, res) => {
   const save_user = new UsersSchema({
     full_name: req.body.full_name,
     dp: "https://styles.redditmedia.com/t5_2c83sr/styles/profileIcon_4dwzf4syg0w51.png",
-    phone: req.body.phone,
     email: req.body.email,
-    username: req.body.username,
     password: hashed_password,
-    gender: req.body.gender,
     rpt: uuid,
   });
   try {
@@ -44,25 +40,18 @@ router.post("/", validateRegister, async (req, res) => {
 
 //Middleware for register validation
 async function validateRegister(req, res, next) {
-  const { full_name, email, username, password, gender } = req.body;
+  const { full_name, email, password } = req.body;
 
-  //Check if all fields are filled 
+  //Check if all fields are filled
   if (
     full_name === "" ||
     email === "" ||
-    username === "" ||
     password === "" ||
-    gender === "" ||
     full_name === undefined ||
     email === undefined ||
-    username === undefined ||
     password === undefined ||
-    gender === undefined ||
-    full_name === null ||
     email === null ||
-    username === null ||
-    password === null ||
-    gender === null
+    password === null
   ) {
     return res
       .status(400)
@@ -94,20 +83,20 @@ async function validateRegister(req, res, next) {
     });
 
   //Check Username is valid
-  const username_regex = /^[a-zA-Z0-9]+$/;
-  if (!username_regex.test(username))
-    return res.status(400).json({
-      message: "Username is not valid",
-      status: "error",
-    });
+  // const username_regex = /^[a-zA-Z0-9]+$/;
+  // if (!username_regex.test(username))
+  //   return res.status(400).json({
+  //     message: "Username is not valid",
+  //     status: "error",
+  //   });
 
   //Check username is unique
-  const user_exists = await UsersSchema.findOne({ username: username });
-  if (user_exists)
-    return res.status(400).json({
-      message: "Username is already taken",
-      status: "error",
-    });
+  // const user_exists = await UsersSchema.findOne({ username: username });
+  // if (user_exists)
+  //   return res.status(400).json({
+  //     message: "Username is already taken",
+  //     status: "error",
+  //   });
 
   //Check phone is valid
   // const phone_regex = /^[0-9]{10}$/;

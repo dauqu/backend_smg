@@ -52,7 +52,7 @@ app.get("/", (req, res) => {
 });
 
 
-setInterval(refreshData, 2000);
+// setInterval(refreshData, 2000);
 
 
 // WebSocket connection handler
@@ -93,6 +93,7 @@ app.use("/register", require("./routes/register"));
 app.use("/login", require("./routes/login"));
 app.use("/profile", require("./routes/profile"));
 app.use("/users", require("./routes/users"));
+app.use("/bet", require("./routes/bet"));
 
 server.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
