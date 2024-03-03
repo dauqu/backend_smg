@@ -11,6 +11,10 @@ const BetSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    market_name: {
+      type: String,
+      required: true,
+    },
     bet_amount: {
       type: Number,
       required: true,
@@ -21,7 +25,7 @@ const BetSchema = new mongoose.Schema(
       enum: ["back", "lay"],
     },
     stack: {
-      type: Number,
+      type: String,
       required: true,
     },
     status: {

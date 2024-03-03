@@ -25,7 +25,6 @@ router.get("/", async (req, res) => {
 router.post("/", async (req, res) => {
   //Check auth
   const check = await CheckAuth(req, res);
-  console.log(check);
   //Check if user is authorized
   if (check.auth === false) {
     return res
@@ -33,40 +32,43 @@ router.post("/", async (req, res) => {
       .json({ message: "Login to place a bet", auth: false, data: null });
   }
 
-    //Get all fields
-    const event_name = req.body.event_name;
-    const bet_amount = req.body.bet_amount;
-    const stack = req.body.stack;
-    const type = req.body.type;
+  //Check both field have data or not
+  if (req.body.data === undefined || req.body.data === null) {
+    return res.status(400).json({ message: "No data to place bet" });
+  } else if (req.body.data.length === 0) {
+    return res.status(400).json({ message: "No data to place bet" });
+  }
 
-  //Check all field are present
+  //Check stack have data or not
   if (
-    event_name === undefined ||
-    event_name === null ||
-    event_name === "" ||
-    bet_amount === undefined ||
-    bet_amount === null ||
-    bet_amount === "" ||
-    stack === undefined ||
-    stack === null ||
-    stack === "" ||
-    type === undefined ||
-    type === null ||
-    type === ""
+    req.body.stack === undefined ||
+    req.body.stack === null ||
+    req.body.stack === ""
   ) {
-    return res.status(400).json({ message: "All fields are required" });
+    return res.status(400).json({ message: "No stack to place bet" });
+  }
+
+  //Min bet require 1
+  if (req.body.data.length < 1) {
+    return res.status(400).json({ message: "Minimum 1 bet required" });
   }
 
   try {
-    const bet = new bet_schema({
+    //Loop req.body.data
+    //Loop req.body.data
+    for (const element of req.body.data) {
+      const bet = new bet_schema({
         user_id: check.data._id,
-        event_name: req.body.event_name,
-        bet_amount: req.body.bet_amount,
-        type: req.body.bet,
+        event_name: element.event_name,
+        market_name: element.market_name,
+        bet_amount: element.price,
+        type: element.type,
         stack: req.body.stack,
-    });
+      });
 
-    await bet.save();
+      await bet.save();
+    }
+
     res.status(200).json({ message: "Bet placed successfully" });
   } catch (error) {
     res.status(500).json({ message: error.message });
