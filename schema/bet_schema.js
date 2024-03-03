@@ -7,16 +7,20 @@ const BetSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    event_name: {
+      type: String,
+      required: true,
+    },
     bet_amount: {
       type: Number,
       required: true,
     },
-    bet_type: {
+    type: {
       type: String,
       required: true,
-      enum: ["single", "multi"],
+      enum: ["back", "lay"],
     },
-    bet_number: {
+    stack: {
       type: Number,
       required: true,
     },

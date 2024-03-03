@@ -33,27 +33,37 @@ router.post("/", async (req, res) => {
       .json({ message: "Login to place a bet", auth: false, data: null });
   }
 
+    //Get all fields
+    const event_name = req.body.event_name;
+    const bet_amount = req.body.bet_amount;
+    const stack = req.body.stack;
+    const type = req.body.type;
+
   //Check all field are present
   if (
-    req.body.bet_amount === undefined ||
-    req.body.bet_amount === null ||
-    req.body.bet_amount === "" ||
-    req.body.bet_type === undefined ||
-    req.body.bet_type === null ||
-    req.body.bet_type === "" ||
-    req.body.bet_number === undefined ||
-    req.body.bet_number === null ||
-    req.body.bet_number === ""
+    event_name === undefined ||
+    event_name === null ||
+    event_name === "" ||
+    bet_amount === undefined ||
+    bet_amount === null ||
+    bet_amount === "" ||
+    stack === undefined ||
+    stack === null ||
+    stack === "" ||
+    type === undefined ||
+    type === null ||
+    type === ""
   ) {
     return res.status(400).json({ message: "All fields are required" });
   }
 
   try {
     const bet = new bet_schema({
-      user_id: check.data._id,
-      bet_amount: req.body.bet_amount,
-      bet_type: req.body.bet_type,
-      bet_number: req.body.bet_number,
+        user_id: check.data._id,
+        event_name: req.body.event_name,
+        bet_amount: req.body.bet_amount,
+        type: req.body.bet,
+        stack: req.body.stack,
     });
 
     await bet.save();
