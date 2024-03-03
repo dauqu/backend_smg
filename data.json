@@ -1,0 +1,1095 @@
+[
+  {
+    "_id": "65e360cdfd962bdc7338049f",
+    "event_id": "28102621",
+    "event_name": "Pakistan Super League",
+    "competition_id": "10693181",
+    "country_code": "PK",
+    "timezone": "GMT",
+    "open_date": "2024-03-18T14:30:00.000Z",
+    "market_count": "1",
+    "scoreboard_id": "",
+    "selections": null,
+    "liability_type": "0",
+    "market_type": [
+      {
+        "marketId": "1.224699772",
+        "marketName": "Winner",
+        "marketStartTime": "2024-03-18T14:30:00.000Z",
+        "totalMatched": 4474.04,
+        "runners": [
+          {
+            "selectionId": 17162689,
+            "runnerName": "Multan Sultans",
+            "handicap": 0,
+            "sortPriority": 1
+          },
+          {
+            "selectionId": 10791812,
+            "runnerName": "Peshawar Zalmi",
+            "handicap": 0,
+            "sortPriority": 2
+          },
+          {
+            "selectionId": 10782588,
+            "runnerName": "Quetta Gladiators",
+            "handicap": 0,
+            "sortPriority": 3
+          },
+          {
+            "selectionId": 10782635,
+            "runnerName": "Karachi Kings",
+            "handicap": 0,
+            "sortPriority": 4
+          },
+          {
+            "selectionId": 10782589,
+            "runnerName": "Islamabad United",
+            "handicap": 0,
+            "sortPriority": 5
+          },
+          {
+            "selectionId": 10782634,
+            "runnerName": "Lahore Qalandars",
+            "handicap": 0,
+            "sortPriority": 6
+          }
+        ]
+      }
+    ],
+    "market_odds": [
+      {
+        "eventid": "28102621",
+        "marketId": "1.224699772",
+        "market": "Winner",
+        "updateTime": "2024-03-03T09:08:06",
+        "status": "OPEN",
+        "inplay": false,
+        "totalMatched": 6130.88,
+        "active": true,
+        "markettype": "ODDS",
+        "runners": [
+          {
+            "selectionId": 10782634,
+            "runner": "Lahore Qalandars",
+            "status": "ACTIVE",
+            "lastPriceTraded": 1.6,
+            "removalDate": null,
+            "ex": {
+              "availableToBack": [
+                { "level": 0, "price": 25, "size": 21 },
+                { "level": 1, "price": 24, "size": 42 },
+                { "level": 2, "price": 21, "size": 25 }
+              ],
+              "availableToLay": [{ "level": 0, "price": 500, "size": 2 }]
+            },
+            "back": [
+              { "level": 0, "price": 25, "size": 21 },
+              { "level": 1, "price": 24, "size": 42 },
+              { "level": 2, "price": 21, "size": 25 }
+            ],
+            "lay": [{ "level": 0, "price": 500, "size": 2 }]
+          },
+          {
+            "selectionId": 17162689,
+            "runner": "Multan Sultans",
+            "status": "ACTIVE",
+            "lastPriceTraded": 3.45,
+            "removalDate": null,
+            "ex": {
+              "availableToBack": [
+                { "level": 0, "price": 2.54, "size": 577 },
+                { "level": 1, "price": 2.52, "size": 7 },
+                { "level": 2, "price": 2.4, "size": 317 }
+              ],
+              "availableToLay": [
+                { "level": 0, "price": 3.35, "size": 5 },
+                { "level": 1, "price": 3.4, "size": 17 },
+                { "level": 2, "price": 3.45, "size": 250 }
+              ]
+            },
+            "back": [
+              { "level": 0, "price": 2.54, "size": 577 },
+              { "level": 1, "price": 2.52, "size": 7 },
+              { "level": 2, "price": 2.4, "size": 317 }
+            ],
+            "lay": [
+              { "level": 0, "price": 3.35, "size": 5 },
+              { "level": 1, "price": 3.4, "size": 17 },
+              { "level": 2, "price": 3.45, "size": 250 }
+            ]
+          },
+          {
+            "selectionId": 10782589,
+            "runner": "Islamabad United",
+            "status": "ACTIVE",
+            "lastPriceTraded": 9.4,
+            "removalDate": null,
+            "ex": {
+              "availableToBack": [
+                { "level": 0, "price": 6, "size": 178 },
+                { "level": 1, "price": 5.7, "size": 94 },
+                { "level": 2, "price": 1.14, "size": 714 }
+              ],
+              "availableToLay": [
+                { "level": 0, "price": 9.4, "size": 2 },
+                { "level": 1, "price": 9.6, "size": 11 },
+                { "level": 2, "price": 9.8, "size": 175 }
+              ]
+            },
+            "back": [
+              { "level": 0, "price": 6, "size": 178 },
+              { "level": 1, "price": 5.7, "size": 94 },
+              { "level": 2, "price": 1.14, "size": 714 }
+            ],
+            "lay": [
+              { "level": 0, "price": 9.4, "size": 2 },
+              { "level": 1, "price": 9.6, "size": 11 },
+              { "level": 2, "price": 9.8, "size": 175 }
+            ]
+          },
+          {
+            "selectionId": 10782635,
+            "runner": "Karachi Kings",
+            "status": "ACTIVE",
+            "lastPriceTraded": 100,
+            "removalDate": null,
+            "ex": {
+              "availableToBack": [
+                { "level": 0, "price": 6.6, "size": 159 },
+                { "level": 1, "price": 6.4, "size": 15 },
+                { "level": 2, "price": 6, "size": 89 }
+              ],
+              "availableToLay": [
+                { "level": 0, "price": 11, "size": 3 },
+                { "level": 1, "price": 11.5, "size": 166 },
+                { "level": 2, "price": 100, "size": 4 }
+              ]
+            },
+            "back": [
+              { "level": 0, "price": 6.6, "size": 159 },
+              { "level": 1, "price": 6.4, "size": 15 },
+              { "level": 2, "price": 6, "size": 89 }
+            ],
+            "lay": [
+              { "level": 0, "price": 11, "size": 3 },
+              { "level": 1, "price": 11.5, "size": 166 },
+              { "level": 2, "price": 100, "size": 4 }
+            ]
+          },
+          {
+            "selectionId": 10791812,
+            "runner": "Peshawar Zalmi",
+            "status": "ACTIVE",
+            "lastPriceTraded": 5.2,
+            "removalDate": null,
+            "ex": {
+              "availableToBack": [
+                { "level": 0, "price": 5.4, "size": 2 },
+                { "level": 1, "price": 5.3, "size": 206 },
+                { "level": 2, "price": 5, "size": 111 }
+              ],
+              "availableToLay": [
+                { "level": 0, "price": 8.4, "size": 200 },
+                { "level": 1, "price": 100, "size": 4 },
+                { "level": 2, "price": 1000, "size": 10 }
+              ]
+            },
+            "back": [
+              { "level": 0, "price": 5.4, "size": 2 },
+              { "level": 1, "price": 5.3, "size": 206 },
+              { "level": 2, "price": 5, "size": 111 }
+            ],
+            "lay": [
+              { "level": 0, "price": 8.4, "size": 200 },
+              { "level": 1, "price": 100, "size": 4 },
+              { "level": 2, "price": 1000, "size": 10 }
+            ]
+          },
+          {
+            "selectionId": 10782588,
+            "runner": "Quetta Gladiators",
+            "status": "ACTIVE",
+            "lastPriceTraded": 4.3,
+            "removalDate": null,
+            "ex": {
+              "availableToBack": [
+                { "level": 0, "price": 4, "size": 75 },
+                { "level": 1, "price": 3.8, "size": 100 },
+                { "level": 2, "price": 3.3, "size": 4 }
+              ],
+              "availableToLay": [
+                { "level": 0, "price": 5.9, "size": 9 },
+                { "level": 1, "price": 6, "size": 200 },
+                { "level": 2, "price": 7, "size": 200 }
+              ]
+            },
+            "back": [
+              { "level": 0, "price": 4, "size": 75 },
+              { "level": 1, "price": 3.8, "size": 100 },
+              { "level": 2, "price": 3.3, "size": 4 }
+            ],
+            "lay": [
+              { "level": 0, "price": 5.9, "size": 9 },
+              { "level": 1, "price": 6, "size": 200 },
+              { "level": 2, "price": 7, "size": 200 }
+            ]
+          }
+        ],
+        "min": "",
+        "max": ""
+      }
+    ],
+    "createdAt": "2024-03-02T17:24:29.628Z",
+    "updatedAt": "2024-03-03T03:39:07.985Z",
+    "__v": 0
+  },
+  {
+    "_id": "65e360cdfd962bdc733804a2",
+    "event_id": "33067248",
+    "event_name": "Karachi Kings v Multan Sultans",
+    "competition_id": "10693181",
+    "country_code": "GB",
+    "timezone": "GMT",
+    "open_date": "2024-03-03T14:00:00.000Z",
+    "market_count": "27",
+    "scoreboard_id": "",
+    "selections": null,
+    "liability_type": "0",
+    "market_type": [
+      {
+        "marketId": "1.224699772",
+        "marketName": "Winner",
+        "marketStartTime": "2024-03-18T14:30:00.000Z",
+        "totalMatched": 4474.04,
+        "runners": [
+          {
+            "selectionId": 17162689,
+            "runnerName": "Multan Sultans",
+            "handicap": 0,
+            "sortPriority": 1
+          },
+          {
+            "selectionId": 10791812,
+            "runnerName": "Peshawar Zalmi",
+            "handicap": 0,
+            "sortPriority": 2
+          },
+          {
+            "selectionId": 10782588,
+            "runnerName": "Quetta Gladiators",
+            "handicap": 0,
+            "sortPriority": 3
+          },
+          {
+            "selectionId": 10782635,
+            "runnerName": "Karachi Kings",
+            "handicap": 0,
+            "sortPriority": 4
+          },
+          {
+            "selectionId": 10782589,
+            "runnerName": "Islamabad United",
+            "handicap": 0,
+            "sortPriority": 5
+          },
+          {
+            "selectionId": 10782634,
+            "runnerName": "Lahore Qalandars",
+            "handicap": 0,
+            "sortPriority": 6
+          }
+        ]
+      }
+    ],
+    "market_odds": [
+      {
+        "eventid": "28102621",
+        "marketId": "1.224699772",
+        "market": "Winner",
+        "updateTime": "2024-03-03T09:08:06",
+        "status": "OPEN",
+        "inplay": false,
+        "totalMatched": 6130.88,
+        "active": true,
+        "markettype": "ODDS",
+        "runners": [
+          {
+            "selectionId": 10782634,
+            "runner": "Lahore Qalandars",
+            "status": "ACTIVE",
+            "lastPriceTraded": 1.6,
+            "removalDate": null,
+            "ex": {
+              "availableToBack": [
+                { "level": 0, "price": 25, "size": 21 },
+                { "level": 1, "price": 24, "size": 42 },
+                { "level": 2, "price": 21, "size": 25 }
+              ],
+              "availableToLay": [{ "level": 0, "price": 500, "size": 2 }]
+            },
+            "back": [
+              { "level": 0, "price": 25, "size": 21 },
+              { "level": 1, "price": 24, "size": 42 },
+              { "level": 2, "price": 21, "size": 25 }
+            ],
+            "lay": [{ "level": 0, "price": 500, "size": 2 }]
+          },
+          {
+            "selectionId": 17162689,
+            "runner": "Multan Sultans",
+            "status": "ACTIVE",
+            "lastPriceTraded": 3.45,
+            "removalDate": null,
+            "ex": {
+              "availableToBack": [
+                { "level": 0, "price": 2.54, "size": 577 },
+                { "level": 1, "price": 2.52, "size": 7 },
+                { "level": 2, "price": 2.4, "size": 317 }
+              ],
+              "availableToLay": [
+                { "level": 0, "price": 3.35, "size": 5 },
+                { "level": 1, "price": 3.4, "size": 17 },
+                { "level": 2, "price": 3.45, "size": 250 }
+              ]
+            },
+            "back": [
+              { "level": 0, "price": 2.54, "size": 577 },
+              { "level": 1, "price": 2.52, "size": 7 },
+              { "level": 2, "price": 2.4, "size": 317 }
+            ],
+            "lay": [
+              { "level": 0, "price": 3.35, "size": 5 },
+              { "level": 1, "price": 3.4, "size": 17 },
+              { "level": 2, "price": 3.45, "size": 250 }
+            ]
+          },
+          {
+            "selectionId": 10782589,
+            "runner": "Islamabad United",
+            "status": "ACTIVE",
+            "lastPriceTraded": 9.4,
+            "removalDate": null,
+            "ex": {
+              "availableToBack": [
+                { "level": 0, "price": 6, "size": 178 },
+                { "level": 1, "price": 5.7, "size": 94 },
+                { "level": 2, "price": 1.14, "size": 714 }
+              ],
+              "availableToLay": [
+                { "level": 0, "price": 9.4, "size": 2 },
+                { "level": 1, "price": 9.6, "size": 11 },
+                { "level": 2, "price": 9.8, "size": 175 }
+              ]
+            },
+            "back": [
+              { "level": 0, "price": 6, "size": 178 },
+              { "level": 1, "price": 5.7, "size": 94 },
+              { "level": 2, "price": 1.14, "size": 714 }
+            ],
+            "lay": [
+              { "level": 0, "price": 9.4, "size": 2 },
+              { "level": 1, "price": 9.6, "size": 11 },
+              { "level": 2, "price": 9.8, "size": 175 }
+            ]
+          },
+          {
+            "selectionId": 10782635,
+            "runner": "Karachi Kings",
+            "status": "ACTIVE",
+            "lastPriceTraded": 100,
+            "removalDate": null,
+            "ex": {
+              "availableToBack": [
+                { "level": 0, "price": 6.6, "size": 159 },
+                { "level": 1, "price": 6.4, "size": 15 },
+                { "level": 2, "price": 6, "size": 89 }
+              ],
+              "availableToLay": [
+                { "level": 0, "price": 11, "size": 3 },
+                { "level": 1, "price": 11.5, "size": 166 },
+                { "level": 2, "price": 100, "size": 4 }
+              ]
+            },
+            "back": [
+              { "level": 0, "price": 6.6, "size": 159 },
+              { "level": 1, "price": 6.4, "size": 15 },
+              { "level": 2, "price": 6, "size": 89 }
+            ],
+            "lay": [
+              { "level": 0, "price": 11, "size": 3 },
+              { "level": 1, "price": 11.5, "size": 166 },
+              { "level": 2, "price": 100, "size": 4 }
+            ]
+          },
+          {
+            "selectionId": 10791812,
+            "runner": "Peshawar Zalmi",
+            "status": "ACTIVE",
+            "lastPriceTraded": 5.2,
+            "removalDate": null,
+            "ex": {
+              "availableToBack": [
+                { "level": 0, "price": 5.4, "size": 2 },
+                { "level": 1, "price": 5.3, "size": 206 },
+                { "level": 2, "price": 5, "size": 111 }
+              ],
+              "availableToLay": [
+                { "level": 0, "price": 8.4, "size": 200 },
+                { "level": 1, "price": 100, "size": 4 },
+                { "level": 2, "price": 1000, "size": 10 }
+              ]
+            },
+            "back": [
+              { "level": 0, "price": 5.4, "size": 2 },
+              { "level": 1, "price": 5.3, "size": 206 },
+              { "level": 2, "price": 5, "size": 111 }
+            ],
+            "lay": [
+              { "level": 0, "price": 8.4, "size": 200 },
+              { "level": 1, "price": 100, "size": 4 },
+              { "level": 2, "price": 1000, "size": 10 }
+            ]
+          },
+          {
+            "selectionId": 10782588,
+            "runner": "Quetta Gladiators",
+            "status": "ACTIVE",
+            "lastPriceTraded": 4.3,
+            "removalDate": null,
+            "ex": {
+              "availableToBack": [
+                { "level": 0, "price": 4, "size": 75 },
+                { "level": 1, "price": 3.8, "size": 100 },
+                { "level": 2, "price": 3.3, "size": 4 }
+              ],
+              "availableToLay": [
+                { "level": 0, "price": 5.9, "size": 9 },
+                { "level": 1, "price": 6, "size": 200 },
+                { "level": 2, "price": 7, "size": 200 }
+              ]
+            },
+            "back": [
+              { "level": 0, "price": 4, "size": 75 },
+              { "level": 1, "price": 3.8, "size": 100 },
+              { "level": 2, "price": 3.3, "size": 4 }
+            ],
+            "lay": [
+              { "level": 0, "price": 5.9, "size": 9 },
+              { "level": 1, "price": 6, "size": 200 },
+              { "level": 2, "price": 7, "size": 200 }
+            ]
+          }
+        ],
+        "min": "",
+        "max": ""
+      }
+    ],
+    "createdAt": "2024-03-02T17:24:29.639Z",
+    "updatedAt": "2024-03-03T03:39:08.005Z",
+    "__v": 0
+  },
+  {
+    "_id": "65e360cdfd962bdc733804ab",
+    "event_id": "28102621",
+    "event_name": "Pakistan Super League",
+    "competition_id": "10693181",
+    "country_code": "PK",
+    "timezone": "GMT",
+    "open_date": "2024-03-18T14:30:00.000Z",
+    "market_count": "1",
+    "scoreboard_id": "",
+    "selections": null,
+    "liability_type": "0",
+    "market_type": [
+      {
+        "marketId": "1.224699772",
+        "marketName": "Winner",
+        "marketStartTime": "2024-03-18T14:30:00.000Z",
+        "totalMatched": 4474.04,
+        "runners": [
+          {
+            "selectionId": 17162689,
+            "runnerName": "Multan Sultans",
+            "handicap": 0,
+            "sortPriority": 1
+          },
+          {
+            "selectionId": 10791812,
+            "runnerName": "Peshawar Zalmi",
+            "handicap": 0,
+            "sortPriority": 2
+          },
+          {
+            "selectionId": 10782588,
+            "runnerName": "Quetta Gladiators",
+            "handicap": 0,
+            "sortPriority": 3
+          },
+          {
+            "selectionId": 10782635,
+            "runnerName": "Karachi Kings",
+            "handicap": 0,
+            "sortPriority": 4
+          },
+          {
+            "selectionId": 10782589,
+            "runnerName": "Islamabad United",
+            "handicap": 0,
+            "sortPriority": 5
+          },
+          {
+            "selectionId": 10782634,
+            "runnerName": "Lahore Qalandars",
+            "handicap": 0,
+            "sortPriority": 6
+          }
+        ]
+      }
+    ],
+    "market_odds": [
+      {
+        "eventid": "28102621",
+        "marketId": "1.224699772",
+        "market": "Winner",
+        "updateTime": "2024-03-02T22:52:02",
+        "status": "OPEN",
+        "inplay": false,
+        "totalMatched": 5990.88,
+        "active": true,
+        "markettype": "ODDS",
+        "runners": [
+          {
+            "selectionId": 10782634,
+            "runner": "Lahore Qalandars",
+            "status": "ACTIVE",
+            "lastPriceTraded": 1.6,
+            "removalDate": null,
+            "ex": {
+              "availableToBack": [
+                { "level": 0, "price": 25, "size": 13 },
+                { "level": 1, "price": 24, "size": 42 },
+                { "level": 2, "price": 21, "size": 25 }
+              ],
+              "availableToLay": [{ "level": 0, "price": 500, "size": 2 }]
+            },
+            "back": [
+              { "level": 0, "price": 25, "size": 13 },
+              { "level": 1, "price": 24, "size": 42 },
+              { "level": 2, "price": 21, "size": 25 }
+            ],
+            "lay": [{ "level": 0, "price": 500, "size": 2 }]
+          },
+          {
+            "selectionId": 17162689,
+            "runner": "Multan Sultans",
+            "status": "ACTIVE",
+            "lastPriceTraded": 3.45,
+            "removalDate": null,
+            "ex": {
+              "availableToBack": [
+                { "level": 0, "price": 2.54, "size": 577 },
+                { "level": 1, "price": 2.52, "size": 7 },
+                { "level": 2, "price": 2.4, "size": 317 }
+              ],
+              "availableToLay": [
+                { "level": 0, "price": 3.35, "size": 5 },
+                { "level": 1, "price": 3.4, "size": 17 },
+                { "level": 2, "price": 3.45, "size": 250 }
+              ]
+            },
+            "back": [
+              { "level": 0, "price": 2.54, "size": 577 },
+              { "level": 1, "price": 2.52, "size": 7 },
+              { "level": 2, "price": 2.4, "size": 317 }
+            ],
+            "lay": [
+              { "level": 0, "price": 3.35, "size": 5 },
+              { "level": 1, "price": 3.4, "size": 17 },
+              { "level": 2, "price": 3.45, "size": 250 }
+            ]
+          },
+          {
+            "selectionId": 10782589,
+            "runner": "Islamabad United",
+            "status": "ACTIVE",
+            "lastPriceTraded": 9.4,
+            "removalDate": null,
+            "ex": {
+              "availableToBack": [
+                { "level": 0, "price": 6, "size": 178 },
+                { "level": 1, "price": 5.7, "size": 94 },
+                { "level": 2, "price": 1.14, "size": 714 }
+              ],
+              "availableToLay": [
+                { "level": 0, "price": 9.4, "size": 2 },
+                { "level": 1, "price": 9.6, "size": 11 },
+                { "level": 2, "price": 9.8, "size": 175 }
+              ]
+            },
+            "back": [
+              { "level": 0, "price": 6, "size": 178 },
+              { "level": 1, "price": 5.7, "size": 94 },
+              { "level": 2, "price": 1.14, "size": 714 }
+            ],
+            "lay": [
+              { "level": 0, "price": 9.4, "size": 2 },
+              { "level": 1, "price": 9.6, "size": 11 },
+              { "level": 2, "price": 9.8, "size": 175 }
+            ]
+          },
+          {
+            "selectionId": 10782635,
+            "runner": "Karachi Kings",
+            "status": "ACTIVE",
+            "lastPriceTraded": 100,
+            "removalDate": null,
+            "ex": {
+              "availableToBack": [
+                { "level": 0, "price": 6.6, "size": 159 },
+                { "level": 1, "price": 6.4, "size": 15 },
+                { "level": 2, "price": 6, "size": 89 }
+              ],
+              "availableToLay": [
+                { "level": 0, "price": 11, "size": 3 },
+                { "level": 1, "price": 11.5, "size": 166 },
+                { "level": 2, "price": 100, "size": 4 }
+              ]
+            },
+            "back": [
+              { "level": 0, "price": 6.6, "size": 159 },
+              { "level": 1, "price": 6.4, "size": 15 },
+              { "level": 2, "price": 6, "size": 89 }
+            ],
+            "lay": [
+              { "level": 0, "price": 11, "size": 3 },
+              { "level": 1, "price": 11.5, "size": 166 },
+              { "level": 2, "price": 100, "size": 4 }
+            ]
+          },
+          {
+            "selectionId": 10791812,
+            "runner": "Peshawar Zalmi",
+            "status": "ACTIVE",
+            "lastPriceTraded": 5.2,
+            "removalDate": null,
+            "ex": {
+              "availableToBack": [
+                { "level": 0, "price": 5.4, "size": 2 },
+                { "level": 1, "price": 5.3, "size": 206 },
+                { "level": 2, "price": 5, "size": 111 }
+              ],
+              "availableToLay": [
+                { "level": 0, "price": 8.4, "size": 200 },
+                { "level": 1, "price": 10, "size": 6 },
+                { "level": 2, "price": 100, "size": 4 }
+              ]
+            },
+            "back": [
+              { "level": 0, "price": 5.4, "size": 2 },
+              { "level": 1, "price": 5.3, "size": 206 },
+              { "level": 2, "price": 5, "size": 111 }
+            ],
+            "lay": [
+              { "level": 0, "price": 8.4, "size": 200 },
+              { "level": 1, "price": 10, "size": 6 },
+              { "level": 2, "price": 100, "size": 4 }
+            ]
+          },
+          {
+            "selectionId": 10782588,
+            "runner": "Quetta Gladiators",
+            "status": "ACTIVE",
+            "lastPriceTraded": 100,
+            "removalDate": null,
+            "ex": {
+              "availableToBack": [
+                { "level": 0, "price": 4.3, "size": 70 },
+                { "level": 1, "price": 4, "size": 75 },
+                { "level": 2, "price": 3.4, "size": 1000 }
+              ],
+              "availableToLay": [
+                { "level": 0, "price": 7, "size": 200 },
+                { "level": 1, "price": 10, "size": 6 },
+                { "level": 2, "price": 100, "size": 4 }
+              ]
+            },
+            "back": [
+              { "level": 0, "price": 4.3, "size": 70 },
+              { "level": 1, "price": 4, "size": 75 },
+              { "level": 2, "price": 3.4, "size": 1000 }
+            ],
+            "lay": [
+              { "level": 0, "price": 7, "size": 200 },
+              { "level": 1, "price": 10, "size": 6 },
+              { "level": 2, "price": 100, "size": 4 }
+            ]
+          }
+        ],
+        "min": "",
+        "max": ""
+      }
+    ],
+    "createdAt": "2024-03-02T17:24:29.785Z",
+    "updatedAt": "2024-03-02T17:24:29.785Z",
+    "__v": 0
+  },
+  {
+    "_id": "65e360cefd962bdc733804b5",
+    "event_id": "33067248",
+    "event_name": "Karachi Kings v Multan Sultans",
+    "competition_id": "10693181",
+    "country_code": "GB",
+    "timezone": "GMT",
+    "open_date": "2024-03-03T14:00:00.000Z",
+    "market_count": "27",
+    "scoreboard_id": "",
+    "selections": null,
+    "liability_type": "0",
+    "market_type": [
+      {
+        "marketId": "1.225509710",
+        "marketName": "Match Odds",
+        "marketStartTime": "2024-03-03T14:00:00.000Z",
+        "totalMatched": 9.87,
+        "runners": [
+          {
+            "selectionId": 10782635,
+            "runnerName": "Karachi Kings",
+            "handicap": 0,
+            "sortPriority": 1
+          },
+          {
+            "selectionId": 17162689,
+            "runnerName": "Multan Sultans",
+            "handicap": 0,
+            "sortPriority": 2
+          }
+        ]
+      }
+    ],
+    "market_odds": [
+      {
+        "eventid": "33067248",
+        "marketId": "1.225509710",
+        "market": "Match Odds",
+        "updateTime": "2024-03-02T22:50:38",
+        "status": "OPEN",
+        "inplay": false,
+        "totalMatched": 417.48,
+        "active": true,
+        "markettype": "ODDS",
+        "runners": [
+          {
+            "selectionId": 10782635,
+            "runner": "Karachi Kings",
+            "status": "ACTIVE",
+            "lastPriceTraded": 2.34,
+            "removalDate": "1900-01-01T00:00:00",
+            "ex": {
+              "availableToBack": [
+                { "level": 0, "price": 2.32, "size": 15 },
+                { "level": 1, "price": 2.3, "size": 29 },
+                { "level": 2, "price": 2.28, "size": 16 }
+              ],
+              "availableToLay": [
+                { "level": 0, "price": 2.36, "size": 17 },
+                { "level": 1, "price": 2.38, "size": 991 },
+                { "level": 2, "price": 2.4, "size": 50 }
+              ]
+            },
+            "back": [
+              { "level": 0, "price": 2.32, "size": 15 },
+              { "level": 1, "price": 2.3, "size": 29 },
+              { "level": 2, "price": 2.28, "size": 16 }
+            ],
+            "lay": [
+              { "level": 0, "price": 2.36, "size": 17 },
+              { "level": 1, "price": 2.38, "size": 991 },
+              { "level": 2, "price": 2.4, "size": 50 }
+            ]
+          },
+          {
+            "selectionId": 17162689,
+            "runner": "Multan Sultans",
+            "status": "ACTIVE",
+            "lastPriceTraded": 1.73,
+            "removalDate": "1900-01-01T00:00:00",
+            "ex": {
+              "availableToBack": [
+                { "level": 0, "price": 1.73, "size": 1362 },
+                { "level": 1, "price": 1.72, "size": 25 },
+                { "level": 2, "price": 1.71, "size": 70 }
+              ],
+              "availableToLay": [
+                { "level": 0, "price": 1.75, "size": 16 },
+                { "level": 1, "price": 1.76, "size": 42 },
+                { "level": 2, "price": 1.77, "size": 20 }
+              ]
+            },
+            "back": [
+              { "level": 0, "price": 1.73, "size": 1362 },
+              { "level": 1, "price": 1.72, "size": 25 },
+              { "level": 2, "price": 1.71, "size": 70 }
+            ],
+            "lay": [
+              { "level": 0, "price": 1.75, "size": 16 },
+              { "level": 1, "price": 1.76, "size": 42 },
+              { "level": 2, "price": 1.77, "size": 20 }
+            ]
+          }
+        ],
+        "min": "",
+        "max": ""
+      }
+    ],
+    "createdAt": "2024-03-02T17:24:30.067Z",
+    "updatedAt": "2024-03-02T17:24:30.067Z",
+    "__v": 0
+  },
+  {
+    "_id": "65e3dea5fd962bdc733d9401",
+    "event_id": "33073453",
+    "event_name": "Islamabad United v Peshawar Zalmi",
+    "competition_id": "10693181",
+    "country_code": "GB",
+    "timezone": "GMT",
+    "open_date": "2024-03-04T14:00:00.000Z",
+    "market_count": "27",
+    "scoreboard_id": "",
+    "selections": null,
+    "liability_type": "0",
+    "market_type": [
+      {
+        "marketId": "1.224699772",
+        "marketName": "Winner",
+        "marketStartTime": "2024-03-18T14:30:00.000Z",
+        "totalMatched": 4474.04,
+        "runners": [
+          {
+            "selectionId": 17162689,
+            "runnerName": "Multan Sultans",
+            "handicap": 0,
+            "sortPriority": 1
+          },
+          {
+            "selectionId": 10791812,
+            "runnerName": "Peshawar Zalmi",
+            "handicap": 0,
+            "sortPriority": 2
+          },
+          {
+            "selectionId": 10782588,
+            "runnerName": "Quetta Gladiators",
+            "handicap": 0,
+            "sortPriority": 3
+          },
+          {
+            "selectionId": 10782635,
+            "runnerName": "Karachi Kings",
+            "handicap": 0,
+            "sortPriority": 4
+          },
+          {
+            "selectionId": 10782589,
+            "runnerName": "Islamabad United",
+            "handicap": 0,
+            "sortPriority": 5
+          },
+          {
+            "selectionId": 10782634,
+            "runnerName": "Lahore Qalandars",
+            "handicap": 0,
+            "sortPriority": 6
+          }
+        ]
+      }
+    ],
+    "market_odds": [
+      {
+        "eventid": "28102621",
+        "marketId": "1.224699772",
+        "market": "Winner",
+        "updateTime": "2024-03-03T09:08:06",
+        "status": "OPEN",
+        "inplay": false,
+        "totalMatched": 6130.88,
+        "active": true,
+        "markettype": "ODDS",
+        "runners": [
+          {
+            "selectionId": 10782634,
+            "runner": "Lahore Qalandars",
+            "status": "ACTIVE",
+            "lastPriceTraded": 1.6,
+            "removalDate": null,
+            "ex": {
+              "availableToBack": [
+                { "level": 0, "price": 25, "size": 21 },
+                { "level": 1, "price": 24, "size": 42 },
+                { "level": 2, "price": 21, "size": 25 }
+              ],
+              "availableToLay": [{ "level": 0, "price": 500, "size": 2 }]
+            },
+            "back": [
+              { "level": 0, "price": 25, "size": 21 },
+              { "level": 1, "price": 24, "size": 42 },
+              { "level": 2, "price": 21, "size": 25 }
+            ],
+            "lay": [{ "level": 0, "price": 500, "size": 2 }]
+          },
+          {
+            "selectionId": 17162689,
+            "runner": "Multan Sultans",
+            "status": "ACTIVE",
+            "lastPriceTraded": 3.45,
+            "removalDate": null,
+            "ex": {
+              "availableToBack": [
+                { "level": 0, "price": 2.54, "size": 577 },
+                { "level": 1, "price": 2.52, "size": 7 },
+                { "level": 2, "price": 2.4, "size": 317 }
+              ],
+              "availableToLay": [
+                { "level": 0, "price": 3.35, "size": 5 },
+                { "level": 1, "price": 3.4, "size": 17 },
+                { "level": 2, "price": 3.45, "size": 250 }
+              ]
+            },
+            "back": [
+              { "level": 0, "price": 2.54, "size": 577 },
+              { "level": 1, "price": 2.52, "size": 7 },
+              { "level": 2, "price": 2.4, "size": 317 }
+            ],
+            "lay": [
+              { "level": 0, "price": 3.35, "size": 5 },
+              { "level": 1, "price": 3.4, "size": 17 },
+              { "level": 2, "price": 3.45, "size": 250 }
+            ]
+          },
+          {
+            "selectionId": 10782589,
+            "runner": "Islamabad United",
+            "status": "ACTIVE",
+            "lastPriceTraded": 9.4,
+            "removalDate": null,
+            "ex": {
+              "availableToBack": [
+                { "level": 0, "price": 6, "size": 178 },
+                { "level": 1, "price": 5.7, "size": 94 },
+                { "level": 2, "price": 1.14, "size": 714 }
+              ],
+              "availableToLay": [
+                { "level": 0, "price": 9.4, "size": 2 },
+                { "level": 1, "price": 9.6, "size": 11 },
+                { "level": 2, "price": 9.8, "size": 175 }
+              ]
+            },
+            "back": [
+              { "level": 0, "price": 6, "size": 178 },
+              { "level": 1, "price": 5.7, "size": 94 },
+              { "level": 2, "price": 1.14, "size": 714 }
+            ],
+            "lay": [
+              { "level": 0, "price": 9.4, "size": 2 },
+              { "level": 1, "price": 9.6, "size": 11 },
+              { "level": 2, "price": 9.8, "size": 175 }
+            ]
+          },
+          {
+            "selectionId": 10782635,
+            "runner": "Karachi Kings",
+            "status": "ACTIVE",
+            "lastPriceTraded": 100,
+            "removalDate": null,
+            "ex": {
+              "availableToBack": [
+                { "level": 0, "price": 6.6, "size": 159 },
+                { "level": 1, "price": 6.4, "size": 15 },
+                { "level": 2, "price": 6, "size": 89 }
+              ],
+              "availableToLay": [
+                { "level": 0, "price": 11, "size": 3 },
+                { "level": 1, "price": 11.5, "size": 166 },
+                { "level": 2, "price": 100, "size": 4 }
+              ]
+            },
+            "back": [
+              { "level": 0, "price": 6.6, "size": 159 },
+              { "level": 1, "price": 6.4, "size": 15 },
+              { "level": 2, "price": 6, "size": 89 }
+            ],
+            "lay": [
+              { "level": 0, "price": 11, "size": 3 },
+              { "level": 1, "price": 11.5, "size": 166 },
+              { "level": 2, "price": 100, "size": 4 }
+            ]
+          },
+          {
+            "selectionId": 10791812,
+            "runner": "Peshawar Zalmi",
+            "status": "ACTIVE",
+            "lastPriceTraded": 5.2,
+            "removalDate": null,
+            "ex": {
+              "availableToBack": [
+                { "level": 0, "price": 5.4, "size": 2 },
+                { "level": 1, "price": 5.3, "size": 206 },
+                { "level": 2, "price": 5, "size": 111 }
+              ],
+              "availableToLay": [
+                { "level": 0, "price": 8.4, "size": 200 },
+                { "level": 1, "price": 100, "size": 4 },
+                { "level": 2, "price": 1000, "size": 10 }
+              ]
+            },
+            "back": [
+              { "level": 0, "price": 5.4, "size": 2 },
+              { "level": 1, "price": 5.3, "size": 206 },
+              { "level": 2, "price": 5, "size": 111 }
+            ],
+            "lay": [
+              { "level": 0, "price": 8.4, "size": 200 },
+              { "level": 1, "price": 100, "size": 4 },
+              { "level": 2, "price": 1000, "size": 10 }
+            ]
+          },
+          {
+            "selectionId": 10782588,
+            "runner": "Quetta Gladiators",
+            "status": "ACTIVE",
+            "lastPriceTraded": 4.3,
+            "removalDate": null,
+            "ex": {
+              "availableToBack": [
+                { "level": 0, "price": 4, "size": 75 },
+                { "level": 1, "price": 3.8, "size": 100 },
+                { "level": 2, "price": 3.3, "size": 4 }
+              ],
+              "availableToLay": [
+                { "level": 0, "price": 5.9, "size": 9 },
+                { "level": 1, "price": 6, "size": 200 },
+                { "level": 2, "price": 7, "size": 200 }
+              ]
+            },
+            "back": [
+              { "level": 0, "price": 4, "size": 75 },
+              { "level": 1, "price": 3.8, "size": 100 },
+              { "level": 2, "price": 3.3, "size": 4 }
+            ],
+            "lay": [
+              { "level": 0, "price": 5.9, "size": 9 },
+              { "level": 1, "price": 6, "size": 200 },
+              { "level": 2, "price": 7, "size": 200 }
+            ]
+          }
+        ],
+        "min": "",
+        "max": ""
+      }
+    ],
+    "createdAt": "2024-03-03T02:21:25.698Z",
+    "updatedAt": "2024-03-03T03:39:08.020Z",
+    "__v": 0
+  }
+]
